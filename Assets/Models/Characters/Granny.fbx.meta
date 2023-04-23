@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 63e67dc4021b95645b0b6ce1b94692da
+guid: 21d5c28c303e14944b3cf389dea8a9dd
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable:
@@ -8,25 +8,50 @@ ModelImporter:
     second: mixamo.com
   externalObjects:
   - first:
-      type: UnityEngine:Texture2D
+      type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Ch46_1001_Diffuse
-    second: {fileID: 2800000, guid: 79b5401796f145a4dac3b48c1d05b8c5, type: 3}
+      name: FitGrandma_Brows_MAT1
+    second: {fileID: 2100000, guid: b5148bb1e64ce0a40afac32d47a2d6b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FitGrandma_Eyes_MAT1
+    second: {fileID: 2100000, guid: 9fadbaf384ed8ce40b938e7dadb34a34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FitGrandma_Mouth_MAT1
+    second: {fileID: 2100000, guid: acf9bb360b19f644ea773ca3a324eabb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grandma_MAT
+    second: {fileID: 2100000, guid: ecbff4d5d6e948d469f5c5ea9aca5b55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lens_MAT
+    second: {fileID: 2100000, guid: 4b92e553c3f82f44ea51a0e3ef7f644b, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: Ch46_1001_Glossiness
-    second: {fileID: 2800000, guid: a11b99f9f11f33c42b6411ec0d0e59a8, type: 3}
+      name: FitnessGrandma_FaceAnimMap
+    second: {fileID: 2800000, guid: 621a649844dbd9a4aa71d89270ed763f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: Ch46_1001_Normal
-    second: {fileID: 2800000, guid: a6e7db44cc62e4a47be198ae10c76cdf, type: 3}
+      name: FitnessGrandma_diffuse
+    second: {fileID: 2800000, guid: 9d601564f1e671f4e96926bfe315eeab, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: Ch46_1001_Specular
-    second: {fileID: 2800000, guid: 13881ffd4d968944ab4e7ecb2989624b, type: 3}
+      name: FitnessGrandma_normal
+    second: {fileID: 2800000, guid: 6643db7dbd7a2d042974f69acef89693, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FitnessGrandma_spec
+    second: {fileID: 2800000, guid: 6554cf5890a5734408d407a65283261d, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
