@@ -7900,6 +7900,11 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0.73
       objectReference: {fileID: 0}
+    - target: {fileID: 3594191103014986389, guid: ea40c9261eaf03644a723872fdbf2d9f,
+        type: 3}
+      propertyPath: animatorController
+      value: 
+      objectReference: {fileID: 9100000, guid: 8b7afd50eb594054c8622c85f70899a0, type: 2}
     - target: {fileID: 3594191103014986398, guid: ea40c9261eaf03644a723872fdbf2d9f,
         type: 3}
       propertyPath: m_RootOrder
@@ -17902,7 +17907,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 63e67dc4021b95645b0b6ce1b94692da,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.29551363
+      value: 0.105
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 63e67dc4021b95645b0b6ce1b94692da,
         type: 3}
@@ -21361,7 +21366,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.1354167, y: 1}
+    m_SensorSize: {x: 1.9818182, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
