@@ -198,6 +198,67 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 37698909}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &42024677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 42024679}
+  - component: {fileID: 42024678}
+  m_Layer: 0
+  m_Name: Dialogue System Scene Events
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &42024678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42024677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca55201633b97d3408f439eb84ecb249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueEntrySceneEvents:
+  - guid: 8a75931b-2ed0-496c-ac7c-7a6823b4916a
+    onExecute:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!4 &42024679
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42024677}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &55000577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,8 +1899,14 @@ PrefabInstance:
     - target: {fileID: 3594191103014986384, guid: ea40c9261eaf03644a723872fdbf2d9f,
         type: 3}
       propertyPath: conversation
-      value: New Conversation 6
+      value: Chicken Convo
       objectReference: {fileID: 0}
+    - target: {fileID: 3594191103014986384, guid: ea40c9261eaf03644a723872fdbf2d9f,
+        type: 3}
+      propertyPath: selectedDatabase
+      value: 
+      objectReference: {fileID: 11400000, guid: 9c3cc9775574b2545964daf65e0c175c,
+        type: 2}
     - target: {fileID: 3594191103014986387, guid: ea40c9261eaf03644a723872fdbf2d9f,
         type: 3}
       propertyPath: actor
@@ -2129,7 +2196,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1206511787925574, guid: 3b1e3e9155d404942bc65d9aa80120ba, type: 3}
       propertyPath: m_Name
-      value: ChickenNPC
+      value: Rocky
       objectReference: {fileID: 0}
     - target: {fileID: 4309743995697292, guid: 3b1e3e9155d404942bc65d9aa80120ba, type: 3}
       propertyPath: m_RootOrder
@@ -2880,7 +2947,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1206511787925574, guid: 3b1e3e9155d404942bc65d9aa80120ba, type: 3}
       propertyPath: m_Name
-      value: ChickenNPC
+      value: Ginger
       objectReference: {fileID: 0}
     - target: {fileID: 4309743995697292, guid: 3b1e3e9155d404942bc65d9aa80120ba, type: 3}
       propertyPath: m_RootOrder
@@ -4845,8 +4912,12 @@ PrefabInstance:
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: initialDatabase
       value: 
-      objectReference: {fileID: 11400000, guid: 24b1ca53d4238ab4dad39d70a976b27d,
+      objectReference: {fileID: 11400000, guid: 9c3cc9775574b2545964daf65e0c175c,
         type: 2}
+    - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: displaySettings.dialogueUI
+      value: 
+      objectReference: {fileID: 101180, guid: 5ba51781a19f8a843abeb2d304d0d26e, type: 3}
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: displaySettings.alertSettings.allowAlertsDuringConversations
       value: 0
@@ -5517,7 +5588,18 @@ PrefabInstance:
     - target: {fileID: 3594191103014986384, guid: ea40c9261eaf03644a723872fdbf2d9f,
         type: 3}
       propertyPath: conversation
-      value: New Conversation 6
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594191103014986384, guid: ea40c9261eaf03644a723872fdbf2d9f,
+        type: 3}
+      propertyPath: selectedDatabase
+      value: 
+      objectReference: {fileID: 11400000, guid: 9c3cc9775574b2545964daf65e0c175c,
+        type: 2}
+    - target: {fileID: 3594191103014986385, guid: ea40c9261eaf03644a723872fdbf2d9f,
+        type: 3}
+      propertyPath: conversation
+      value: Chicken Convo
       objectReference: {fileID: 0}
     - target: {fileID: 3594191103014986387, guid: ea40c9261eaf03644a723872fdbf2d9f,
         type: 3}
@@ -6502,7 +6584,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 647763266}
-  - component: {fileID: 647763265}
+  - component: {fileID: 647763267}
   m_Layer: 0
   m_Name: Starting Sequence
   m_TagString: Untagged
@@ -6510,7 +6592,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &647763265
+--- !u!4 &647763266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647763264}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19.854061, y: 3.3257663, z: 14.017473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &647763267
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6537,7 +6634,7 @@ MonoBehaviour:
   questEntryNumber: 1
   questEntryState: 0
   luaCode: 
-  sequence: 
+  sequence: Fade(in,2);
   sequenceSpeaker: {fileID: 0}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
@@ -6555,7 +6652,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: Game Intro
+  conversation: GameIntro
   conversationConversant: {fileID: 0}
   conversationActor: {fileID: 0}
   startConversationEntryID: -1
@@ -6577,22 +6674,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: 24b1ca53d4238ab4dad39d70a976b27d, type: 2}
---- !u!4 &647763266
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647763264}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.854061, y: 3.3257663, z: 14.017473}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 26
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  selectedDatabase: {fileID: 11400000, guid: 9c3cc9775574b2545964daf65e0c175c, type: 2}
 --- !u!4 &651779325 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 407526, guid: d4f06407f06d8cf41b643015132cafca,
@@ -6608,7 +6690,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1206511787925574, guid: 3b1e3e9155d404942bc65d9aa80120ba, type: 3}
       propertyPath: m_Name
-      value: ChickenNPC
+      value: Molly
       objectReference: {fileID: 0}
     - target: {fileID: 4309743995697292, guid: 3b1e3e9155d404942bc65d9aa80120ba, type: 3}
       propertyPath: m_RootOrder
@@ -7963,8 +8045,14 @@ PrefabInstance:
     - target: {fileID: 3594191103014986384, guid: ea40c9261eaf03644a723872fdbf2d9f,
         type: 3}
       propertyPath: conversation
-      value: Amy Conversation
+      value: Amy Conversation 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3594191103014986384, guid: ea40c9261eaf03644a723872fdbf2d9f,
+        type: 3}
+      propertyPath: selectedDatabase
+      value: 
+      objectReference: {fileID: 11400000, guid: 9c3cc9775574b2545964daf65e0c175c,
+        type: 2}
     - target: {fileID: 3594191103014986385, guid: ea40c9261eaf03644a723872fdbf2d9f,
         type: 3}
       propertyPath: conversation
@@ -18002,7 +18090,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 63e67dc4021b95645b0b6ce1b94692da,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21
+      value: 38.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 63e67dc4021b95645b0b6ce1b94692da,
         type: 3}
@@ -18012,27 +18100,27 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 63e67dc4021b95645b0b6ce1b94692da,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.14
+      value: 31.089
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 63e67dc4021b95645b0b6ce1b94692da,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.069604434
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 63e67dc4021b95645b0b6ce1b94692da,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 63e67dc4021b95645b0b6ce1b94692da,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.9975747
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 63e67dc4021b95645b0b6ce1b94692da,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 63e67dc4021b95645b0b6ce1b94692da,
         type: 3}
@@ -18042,7 +18130,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 63e67dc4021b95645b0b6ce1b94692da,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 172.017
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 63e67dc4021b95645b0b6ce1b94692da,
         type: 3}
@@ -18444,8 +18532,14 @@ PrefabInstance:
     - target: {fileID: 3594191103014986384, guid: ea40c9261eaf03644a723872fdbf2d9f,
         type: 3}
       propertyPath: conversation
-      value: New Conversation 6
+      value: Chicken Convo
       objectReference: {fileID: 0}
+    - target: {fileID: 3594191103014986384, guid: ea40c9261eaf03644a723872fdbf2d9f,
+        type: 3}
+      propertyPath: selectedDatabase
+      value: 
+      objectReference: {fileID: 11400000, guid: 9c3cc9775574b2545964daf65e0c175c,
+        type: 2}
     - target: {fileID: 3594191103014986387, guid: ea40c9261eaf03644a723872fdbf2d9f,
         type: 3}
       propertyPath: actor
